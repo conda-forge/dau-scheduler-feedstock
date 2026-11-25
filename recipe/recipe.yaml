@@ -11,9 +11,6 @@ package:
 source:
   url: https://pypi.org/packages/source/d/dau-scheduler/dau_scheduler-${{ version }}.tar.gz
   sha256: f56e853cf6a05b9c5548c9acee44b43b124d632be67e9b0fe0b35097348a0bf7
-  patches:
-    # Windows expands ~ from USERPROFILE; set it alongside HOME in the test.
-    - fix-windows-home-directory-test.patch
 
 build:
   number: 0
