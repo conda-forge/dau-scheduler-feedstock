@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.0"
+  version: "0.5.0"
   python_min: "3.12"
 
 package:
@@ -10,10 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dau-scheduler/dau_scheduler-${{ version }}.tar.gz
-  sha256: cfe0d0f7598f663ad525a47e854fb25771ddc7ee2c40fff4f3c2b73673d9e7e7
-  patches:
-    # Windows expands ~ from USERPROFILE; set it alongside HOME in the test.
-    - fix-windows-home-directory-test.patch
+  sha256: f56e853cf6a05b9c5548c9acee44b43b124d632be67e9b0fe0b35097348a0bf7
 
 build:
   number: 0
